@@ -16,4 +16,4 @@ Alternatively, open the [index.html](./public/index.html) file.
 
 ## License
 
-This repository is publicshed under the [MIT License](https://opensource.org/licenses/MIT)
+This repository is published under the [MIT License](https://opensource.org/licenses/MIT)
