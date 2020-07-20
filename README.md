@@ -11,7 +11,7 @@ More information available at https://ip-api.com/docs/legal.
 
 ## Test
 
-If you would like to test its functionality, execute a "```bash node app.js```" and access the webpage via **localhost:4001**. 
+If you would like to test its functionality, execute a "```node app.js```" and access the webpage via **localhost:4001**. 
 (Prerequiste: Express module required)
 Alternatively, open the [index.html](./public/index.html) file.
 
