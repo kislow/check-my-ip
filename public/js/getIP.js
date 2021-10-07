@@ -24,7 +24,7 @@ Error Handling:
 2. variable validateIP uses a regular expression to check for valid ipv4
 3. error item will be appended if the retrieved data has an invalid ipv4
 */
- const validateIP = /^(?=\d+\.\d+\.\d+\.\d+$)(?:(?:25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]|[0-9])\.?){4}$/;
+const validateIP = /^(?=\d+\.\d+\.\d+\.\d+$)(?:(?:25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]|[0-9])\.?){4}$/;
 
 let errorItem = [ 
     createListItem('IP version incorrect, data cannot be retrieved!')
@@ -48,8 +48,9 @@ const retrieveData = () => {
             zip = `ZIP: ${data.zip}`,
             region = `Region: ${data.region}`,
             country = `Country: ${data.country}`;
-        // ipv4 validation
+
         let ipValidation = validateIP.test(data.query);
+
         let items = [ 
             createListItem(ip),
             createListItem(isp),
@@ -59,7 +60,8 @@ const retrieveData = () => {
             createListItem(region),
             createListItem(country)
         ];
-        // if retrieved IP is not a valid IPv4 address an error message will be displayed
+        
+        // display error if ipv4 is invalid
         if (!ipValidation) {
             appendChildren(myList, errorItem);
         } else {
@@ -74,6 +76,4 @@ const retrieveData = () => {
     });    
 };
 
-// invoke function to retrieve required api data
 retrieveData();
-
