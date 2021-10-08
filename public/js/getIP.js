@@ -16,7 +16,7 @@ function appendChildren(parent, children) {
 const myList = document.getElementById('my-list');
 
 // define api url to retrieve data in json format
-const url4 = 'http://ip-api.com/json/'; // Get IP
+const url = 'http://ip-api.com/json/';
 
 /* 
 Error Handling:
@@ -38,7 +38,7 @@ let errorItem = [
 */
 
 const retrieveData = () => {
-    fetch(url4)
+    fetch(url)
     .then((res) => res.json())
     .then((data) => {
         let ip = `IPv4: ${data.query}`,
