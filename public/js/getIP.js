@@ -51,24 +51,21 @@ const retrieveData = () => {
 
         let ipValidation = validateIP.test(data.query);
 
-        let items = [ 
-            createListItem(ip),
-            createListItem(isp),
-            createListItem(org),
-            createListItem(city),
-            createListItem(zip),
-            createListItem(region),
-            createListItem(country)
-        ];
         
         // display error if ipv4 is invalid
         if (!ipValidation) {
             appendChildren(myList, errorItem);
         } else {
+            for (var dataList of [ip,isp,org,city,zip,region,country]) {
+                let items = 
+                [
+                    createListItem(dataList)
+                ]
             items.forEach((li) => {
                 myList.appendChild(li);
             });
         }
+    }
 
     })
     .catch((error) => {
