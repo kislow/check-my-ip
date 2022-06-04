@@ -1,6 +1,6 @@
 # Check your public IP
 
-This basic webpage retrieves clients IP Geolcation.
+A basic webpage that retrieves clients' IP geolocation.
 
 ## API Reference
 
