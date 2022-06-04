@@ -4,14 +4,15 @@ This basic webpage retrieves clients IP Geolcation.
 
 ## API Reference
 
-For the API gelocation [ip-api](https://ip-api.com) is in use, which has a usage limit.
-[ip-api](https://ip-api.com) does not allow commercial use for this endpoint, therefore please refer to their pro service for unlimited queries.
-For more information please refer to https://ip-api.com/docs/legal.
+Geolocation is handled by [ip-api.com](https://ip-api.com) and has a usage cap.
+For unlimited queries, please refer to [IP-API's](http://ip-api.com) pro service. \
+IP-API does not permit the commercial use of this endpoint.
 
-## Test
+## Getting started
 
-If you would like to test its functionality, execute a "```node app.js```" and access the webpage via **localhost:8081**. 
-(Prerequiste: Express module required)
+**Prerequiste:** Express module required
+
+The node app can be tested by executing `node app.js` and then navigating to the listed URL: `localhost:8081`. \
 Alternatively, open the [index.html](./public/index.html) file.
 
 ## License

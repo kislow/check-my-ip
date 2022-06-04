@@ -50,7 +50,6 @@ const retrieveData = () => {
             country = `Country: ${data.country}`;
 
         let ipValidation = validateIP.test(data.query);
-
         
         // display error if ipv4 is invalid
         if (!ipValidation) {
