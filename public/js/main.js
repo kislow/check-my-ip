@@ -11,4 +11,3 @@ const toggle = () => {
 };
 
 hideShow.onclick = toggle;
-

@@ -12,6 +12,11 @@ IP-API does not permit the commercial use of this endpoint.
 
 **Prerequiste:** Express module required
 
+```sh
+$ npm init
+$ npm install express
+```
+
 The node app can be tested by executing `node app.js` and then navigating to the listed URL: `localhost:8081`. \
 Alternatively, open the [index.html](./public/index.html) file.
 
